@@ -1,0 +1,10 @@
+{% extends 'phonebook/base.html' %}
+{% block content %}
+
+<h1><center>Contacts:</center></h1>
+{% for contact in contacts %}
+    <div>
+       <a href ="{% url 'contact_detail' pk=contact.pk %}" style ="color:black; font-size:15px;"><p><center>{{contact.firstname}} {{contact.lastname}}</center></p></a>
+    </div> 
+{% endfor %}
+{% endblock %}

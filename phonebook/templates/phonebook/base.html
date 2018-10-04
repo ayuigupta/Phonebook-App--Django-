@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>PhoneBook</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    </head>
+    <body style ="background-color : #76D7C4">
+        <div style ="font-family: 'Lobster'; background-color: #48C9B0; margin-top: 0; padding: 10px 20px 20px 40px;">
+            <h1><center>Phonebook</center></h1>
+            <button type="submit" class="save btn btn-default"><a href="/logout">logout</a></button>
+        </div>
+
+        {% block content %}
+        
+        {% endblock %}
+    </body>
+</html>

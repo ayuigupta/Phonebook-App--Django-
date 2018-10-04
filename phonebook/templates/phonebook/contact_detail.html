@@ -1,0 +1,11 @@
+{% extends 'phonebook/base.html' %}
+
+{% block content %}
+    <div><center>
+        <p style = "font-size: 20px; padding-left: 50px;">Name: {{contact.firstname}} {{contact.lastname}}</p></a>
+        <p style = "font-size: 20px; padding-left: 50px;">Phone: {{contact.phone}}</p> 
+        <p style = "font-size: 20px; padding-left: 50px;">Email: {{contact.email}}</p>
+        <a class="btn btn-default" href="{% url 'contact_edit' pk=contact.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a class="btn btn-default" href="{% url 'contact_delete' pk=contact.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+    </center></div>
+{% endblock %}

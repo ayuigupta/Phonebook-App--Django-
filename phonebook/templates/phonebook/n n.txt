@@ -1,0 +1,5 @@
+<form class= "post-form" method="POST">{% csrf_token %}
+        Username: <input type="text" name="username" value="" id="username" size="50" /><br />
+        Password: <input type="password" name="password" value="" id="password" size="50" /><br />
+        <button type="submit" class="save btn btn-default">Login</button>
+    </form>

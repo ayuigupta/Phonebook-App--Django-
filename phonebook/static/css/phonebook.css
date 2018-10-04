@@ -1,0 +1,18 @@
+body{
+background:#99e6ff;
+}
+
+.page-header {
+    font-family: 'Lobster';
+    background-color: #33ccff;
+    margin-top: 0;
+    padding: 10px 20px 20px 40px;
+}
+
+.content {
+    width:30%;
+    float:left;
+    font-size: 20px;
+    padding-left: 50px;
+    vertical-align: middle;
+}
